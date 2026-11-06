@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy — Lootkit</title>
+  <meta name="description" content="How Lootkit and the Lootkit Saver extension handle your data." />
+  <meta name="theme-color" content="#15100c" />
+  <link rel="icon" type="image/png" href="icons/favicon-32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=28" />
+  <style>
+    .doc { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; line-height: 1.65; }
+    .doc a { color: var(--sun); }
+    .doc .back { font-size: 14px; text-decoration: none; }
+    .doc h1 { font-family: "Fraunces", serif; font-weight: 900; font-size: clamp(1.9rem, 5vw, 2.6rem); margin: 18px 0 6px; }
+    .doc h2 { font-family: "Fraunces", serif; font-weight: 700; font-size: 1.25rem; margin: 30px 0 8px; }
+    .doc p, .doc li { color: rgba(246, 234, 210, 0.85); }
+    .doc ul { padding-left: 22px; display: grid; gap: 6px; }
+    .doc .short { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin-top: 18px; }
+    .doc .short b { color: var(--text); }
+    .doc .updated { color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main class="doc">
+    <a class="back" href="./">← Back to Lootkit</a>
+    <h1>Privacy</h1>
+    <p class="updated">Last updated: November 4, 2026</p>
+
+    <div class="short">
+      <p><b>The short version:</b> everything you put in Lootkit stays on your own computer, in your browser.
+        There are no accounts, no tracking, no ads, and no cookies. We never see your pictures, notes, assets or links.</p>
+    </div>
+
+    <h2>What Lootkit keeps, and where</h2>
+    <ul>
+      <li>Your boards, pictures, sticky notes, assets and links are saved in your browser's own storage on your device.
+        They are not sent to us or to anyone else.</li>
+      <li>If you turn on <b>Auto-backup</b> or use <b>Save to computer</b>, Lootkit writes files only into the folder or
+        file you pick. Auto-backup keeps one file called <code>lootkit-backup.json</code> plus one dated copy per day,
+        and removes dated copies older than the newest seven. It does not touch other files.</li>
+      <li>If you clear your browser's data for this site, your work there is deleted. Keep a backup.</li>
+    </ul>
+
+    <h2>Things that do contact other websites</h2>
+    <ul>
+      <li><b>Fonts</b> are loaded from Google Fonts, so Google receives a normal web request (including your IP address) when the page loads.</li>
+      <li><b>Quick Links icons</b> are loaded from each linked website (for example <code>fab.com/favicon.ico</code>), so that website receives a normal request.</li>
+      <li><b>The website host</b> (GitHub Pages) receives a normal request when you open Lootkit and may keep standard server logs.
+        See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's privacy statement</a>.</li>
+      <li>Links you click open those websites, as any link would.</li>
+    </ul>
+
+    <h2>The Lootkit Saver extension</h2>
+    <p>The optional browser extension adds two items to your right-click menu: <b>Save image to Lootkit board</b> and
+      <b>Save link to my Lootkit links</b>. It also marks assets you already own when you visit an asset store.</p>
+    <ul>
+      <li>The right-click items act only when you choose them. Choosing one reads that one picture or link, plus a few words to name it:
+        the link's text or any text you selected, or the picture's description (or, if it has none, the page's title).
+        It downloads the picture from its website, the same way the page itself loads it (with that website's normal cookies), so it can hand it to Lootkit.
+        It does not keep the address of the page you were on.</li>
+      <li>Saved items wait in the extension's own storage on your computer until Lootkit is open, then they move into Lootkit and are removed from the extension.</li>
+      <li>On web pages it highlights the link you right-click, and shows a small "Saved" note. Apart from the asset-store check described below, it does not read, collect or send anything else from the pages you visit.</li>
+      <li>It hands items only to the Lootkit page itself. Nothing is sent to us or to any other server.</li>
+      <li><b>"You own this" on asset stores:</b> Lootkit gives the extension a copy of your asset list (each asset's name, store link,
+        store, price, purchase date and projects — no screenshots). The extension keeps this copy on your computer and, only on
+        Fab, the Unity Asset Store, itch.io, Gumroad, Sketchfab and CGTrader, compares it with the page you are looking at to show a
+        "You own this" note. It only reads those pages; it never clicks, buys or sends anything. Removing the extension removes the copy.</li>
+      <li>Why it asks for access to all websites: so the right-click menu works on any site and it can download the picture you chose.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>Lootkit does not collect personal information from anyone, including children.</p>
+
+    <h2>Changes and questions</h2>
+    <p>If this page changes, the date at the top changes too. Questions or problems:
+      <a href="https://github.com/Jyneri/lootkit/issues" target="_blank" rel="noopener">open an issue on GitHub</a>.</p>
+  </main>
+</body>
+</html>

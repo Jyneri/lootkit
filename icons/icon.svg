@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Dev Journal icon: a pinned photo on cork -->
+  <rect width="512" height="512" rx="112" fill="#1f1812"/>
+  <rect x="56" y="56" width="400" height="400" rx="64" fill="#8a5526"/>
+  <rect x="56" y="56" width="400" height="400" rx="64" fill="none" stroke="#6e4a26" stroke-width="16"/>
+  <g transform="rotate(-6 256 270)">
+    <rect x="132" y="142" width="248" height="236" rx="8" fill="#fdf6e6"/>
+    <rect x="152" y="162" width="208" height="150" rx="4" fill="#2b4a6f"/>
+    <path d="M152 312 L222 236 L268 280 L304 248 L360 312 Z" fill="#e8973a"/>
+    <circle cx="318" cy="200" r="18" fill="#ffd27a"/>
+    <rect x="186" y="332" width="140" height="12" rx="6" fill="#c8b48e"/>
+  </g>
+  <circle cx="256" cy="140" r="30" fill="#c4492f"/>
+  <circle cx="246" cy="130" r="10" fill="#ff8a73"/>
+</svg>
